@@ -71,7 +71,7 @@ class filter():
     if da == 'today':
       d = datetime.datetime.now()
     else:
-      d = get_time()
+      d = self.get_time()
 
     df = self.running(date = d)
     w1 = w1
