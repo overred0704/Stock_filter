@@ -6,11 +6,6 @@ import datetime
 import time
 
 class stock_filter():
-  def __init__(self,  mode):
-
-    self.mode = mode
-    self.n_days = int()
-    self.df = pd.DataFrame()
   
   def crawler(self, date):
     url = requests.post('http://www.twse.com.tw/exchangeReport/MI_INDEX?response=csv&date=' + str(date).split(' ')[0].replace('-','') + '&type=ALL')
@@ -35,13 +30,11 @@ class stock_filter():
       print('loading', date)
       # crawler
       try:
-          # start
           data[date.date()] = self.crawler(date)
           print('complete!')
           fail_count = 0
       except:
-          # 跳過假日
-          print('fail!')
+          print('沒開盤')
           fail_count += 1
       else:
         n_days -= 1
