@@ -5,7 +5,7 @@ import numpy as np
 import datetime
 import time
 
-class stock_filter():
+class filter():
   
   def crawler(self, date):
     url = requests.post('http://www.twse.com.tw/exchangeReport/MI_INDEX?response=csv&date=' + str(date).split(' ')[0].replace('-','') + '&type=ALL')
