@@ -38,5 +38,5 @@ f.filter1( w1 = (1/4) , w2 = 3, day = 'other')
 
 之後會跳出輸入介面 輸入[年 月 日]就可以
 
-![Imgur](https://imgur.com/UptCHHA)
+![Imgur](https://imgur.com/UptCHHA.png)
 
