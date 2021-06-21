@@ -17,3 +17,26 @@
 重要指標次序:成交量>>線型>>相關資訊
 
 希望可以賺錢辣...
+
+## 執行
+
+```python
+!git clone https://github.com/overred0704/Stock_filter
+from Stock_filter.filter_v1 import filter
+```
+
+### 指定物件
+```python
+f = filter()
+f.filter1( w1 = (1/4) , w2 = 3, day = 'today')
+```
+
+### 預設是今天日期 要修改的話把day裡面的str改成other
+```python
+f.filter1( w1 = (1/4) , w2 = 3, day = 'other')
+```
+
+之後會跳出輸入介面 輸入[年 月 日]就可以
+
+![Imgur](https://imgur.com/UptCHHA)
+
